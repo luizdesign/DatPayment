@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "card": "^2.0.4"
+    "card": "https://github.com/luizdesign/card.git#feature/hipercard"
   }
 }
