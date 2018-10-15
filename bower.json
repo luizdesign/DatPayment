@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "card": "^2.0.4"
+    "card": "https://github.com/caiofralmeida/card.git#feature/remove_cards_option"
   }
 }

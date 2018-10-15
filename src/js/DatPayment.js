@@ -185,6 +185,11 @@ class DatPayment {
     }
 
     initCard(){
+        let cardsToRemove = [];
+
+        if (this.options.cardsToRemove) {
+            cardsToRemove = this.options.cardsToRemove;
+        }
 
         this.card = new Card({
             form: this.options.form_selector,
@@ -211,7 +216,8 @@ class DatPayment {
                 cvc: this.options.placeholders.cvc,
                 name: this.options.placeholders.name
             },
-            debug: false
+            debug: false,
+            cardsToRemove: cardsToRemove
         });
     }
 }
